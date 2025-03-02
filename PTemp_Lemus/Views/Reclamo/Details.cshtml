@@ -1,0 +1,106 @@
+﻿@model PTemp_Lemus.Models.ReclamoModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ReclamoModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreProveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreProveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccionProveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccionProveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.detalleReclamo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detalleReclamo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefonoProveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefonoProveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.montoReclamo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.montoReclamo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaIngreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaIngreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaRevision)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaRevision)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idConsumidor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idConsumidor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idEstado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idEstado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.activo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.activo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idReclamo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

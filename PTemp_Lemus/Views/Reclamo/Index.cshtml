@@ -1,0 +1,84 @@
+﻿@model IEnumerable<PTemp_Lemus.Models.ReclamoModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>Reclamos</h2>*@
+<style>
+    .table{
+        border-color:black;
+        border: solid;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table td, th {
+        border: 2px solid black;
+        padding: 8px; /* Para mejorar la legibilidad */
+        text-align: left; /* Alineación del texto a la izquierda */
+    }
+</style>
+<p>
+        @Html.ActionLink("Nuevo Reclamo", "Create","Reclamo",null, new {@class = "btn btn-primary"})
+</p>
+<fieldset>
+    <legend>Reclamo</legend>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    N°Reclamo
+                </th>
+                <th>
+                    Proveedor
+                </th>
+                <th>
+                    Consumidor
+                </th>
+                <th>
+                    Detalle
+                </th>
+                <th>
+                    Estado
+                </th>
+                <th>
+                    Activo
+                </th>
+                <th>
+                    Accion
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.idReclamo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombreProveedor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.idConsumidor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.detalleReclamo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.idEstado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.activo)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.idReclamo }, new { @class = "btn btn-primary" }) |
+                        @Html.ActionLink("Ver Detalles", "Details", new { id = item.idReclamo }, new { @class = "btn btn-primary" }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.idReclamo }, new { @class = "btn btn-primary" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</fieldset>
