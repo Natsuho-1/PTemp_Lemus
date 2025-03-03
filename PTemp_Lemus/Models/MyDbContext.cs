@@ -14,5 +14,7 @@ namespace PTemp_Lemus.Models
         }
         public DbSet <EmpleadoModel> EmpleadoModel { get; set; }
         public DbSet<ReclamoModel> ReclamoModel { get; set; }
+        public System.Data.Entity.DbSet<PTemp_Lemus.Models.ConsumidorModel> ConsumidorModels { get; set; }
+        public DbSet<EstadoModel> estadoModels { get; set; }
     }
 }

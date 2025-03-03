@@ -32,6 +32,10 @@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            @using (Html.BeginForm("Logout", "Empleado", FormMethod.Post))
+            {
+                <input type="submit" value="Cerrar sesión" class="btn btn-danger" />
+            }
         </footer>
     </div>
 

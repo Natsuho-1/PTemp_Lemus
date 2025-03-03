@@ -88,3 +88,7 @@ C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\EntityFramework.dll
 C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\EntityFramework.SqlServer.dll
 C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\EntityFramework.xml
 C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\EntityFramework.SqlServer.xml
+C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\PagedList.dll
+C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\PagedList.Mvc.dll
+C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\PagedList.xml
+C:\Users\Santos\source\repos\PTemp_Lemus\PTemp_Lemus\bin\PagedList.Mvc.xml

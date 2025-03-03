@@ -28,5 +28,10 @@ namespace PTemp_Lemus.Models
         public int idEstado {  get; set; }
         [Required]
         public bool activo { get; set; }
+        //propiedad estado
+        [NotMapped]
+        public string nombreEstado { get; set; }
+
+        public virtual ConsumidorModel Consumidor { get; set; }
     }
 }

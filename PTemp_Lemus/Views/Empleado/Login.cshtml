@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+<head>
+    <link href="~/Content/css/Login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<div class="login-container">
+    <div class="login-box">
+        <div class="login-header">
+            <h4>LOGIN</h4>
+            <hr />
+        </div>
+        @using (Html.BeginForm("Login", "Empleado", FormMethod.Post))
+        {
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+                <label for="clave">Clave</label>
+                <input type="password" name="clave" id="clave" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary login-button">Ingresar</button>
+            </div>
+
+            if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.Error
+                </div>
+            }
+        }
+    </div>
+</div>

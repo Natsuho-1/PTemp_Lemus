@@ -1,0 +1,66 @@
+﻿@model PTemp_Lemus.Models.ConsumidorModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConsumidorModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreConsumidor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreConsumidor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoConsumidor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoConsumidor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correoElectronico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correoElectronico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duiConsumidor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duiConsumidor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.activo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.activo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idConsumidor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
